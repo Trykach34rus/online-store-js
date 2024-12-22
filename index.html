@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./null.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-top">
+				<h1 class="title">Fake Store</h1>
+				<input type="text" class="search" placeholder="Search..." />
+			</div>
+			<div class="header-body">
+				<div class="filters"></div>
+				<div class="header-flex">
+					<select class="sort" id="">
+						<option value="0">default</option>
+						<option value="1">price</option>
+						<option value="2">title</option>
+						<option value="3">rating</option>
+					</select>
+					<button class="cart-btn">
+						Cart <span class="cart-count">0</span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="">
+			<div class="products"></div>
+		</main>
+		<div class="modal">
+			<div class="modal-container">
+				<div class="modal-top">
+					<h2 class="modal-title">
+						Products: <span class="modal-count"></span>
+					</h2>
+					<button class="modal-close">X</button>
+				</div>
+				<div class="modal-body"></div>
+				<div class="modal-footer">
+					<h4 class="modal-footer-title">
+						Full price: <span class="modal-price">100$</span>
+					</h4>
+					<button class="modal-btn">Purchase</button>
+				</div>
+			</div>
+		</div>
+		<template class="product-template">
+			<div class="product">
+				<img
+					src="https://cdn1.ozone.ru/multimedia/1018512991.jpg"
+					alt=""
+					class="product-img"
+				/>
+				<div class="product-body">
+					<h3 class="product-name">Ноутбук Dell</h3>
+					<p class="product-description"></p>
+					<div class="product-info">
+						<p class="product-price">25000</p>
+						<button class="product-btn">Add to cart</button>
+					</div>
+				</div>
+			</div>
+		</template>
+		<template class="filter-template">
+			<button class="filter-btn">Компьютеры</button>
+		</template>
+		<template class="cart-template">
+			<div class="modal-item">
+				<div class="modal-left">
+					<img src="" alt="" class="modal-img" />
+					<h3 class="modal-name">Eyeshadow Palette with Mirror</h3>
+				</div>
+				<div class="modal-right">
+					<button class="modal-minus">-</button>
+					<span class="modal-item-count">0</span>
+					<button class="modal-plus">+</button>
+					<p class="modal-item-price">100$</p>
+					<button class="modal-delete">X</button>
+				</div>
+			</div>
+		</template>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
